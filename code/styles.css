@@ -57,6 +57,23 @@ nav a {
   padding: 15px 0;
 }
 
+#arrow-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: none;
+  position: fixed;
+  bottom: 12vh;
+  right: 10px;
+  z-index: 99;
+}
+
+#up-arrow-img {
+width: 25px;
+height: 25px;
+filter: invert(100%) sepia(45%) saturate(2%) hue-rotate(65deg) brightness(108%) contrast(101%);
+}
+
 #image-wrapper {
   background-image: url("/images/main_cake.jpg");
   background-size: cover;
@@ -78,6 +95,8 @@ nav a {
 #logo-wrapper img {
   max-width: 60%;
   max-height: 60%;
+  border-radius: 50%;
+  border: 2px solid #ebba77;
 }
 
 #shop-window {
@@ -118,6 +137,7 @@ nav a {
   padding: 20px 15px;
   text-align: center;
 }
+
 button {
   font-family: 'Mali', cursive;
   font-size: 18px;
@@ -157,7 +177,7 @@ button {
   text-align: center;
 }
 
-#products-window img {
+.product-wrapper img {
   width: 200px;
   height: 200px;
 }
@@ -191,12 +211,13 @@ button {
   width: 120px;
   height: 120px;
   border: 2px solid #83826B;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 #contacts-window {
   text-align: center;
   width: 100%;
-  height: 100vh;
+  height: 90vh;
   background-color: #965734;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ebba77' fill-opacity='0.18'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
 }
@@ -210,9 +231,37 @@ button {
   color: white;
 }
 
+footer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #574E51;
+  width: 100%;
+  height: 10vh;
+  box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
+  -webkit-box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
+  border-top: 1px solid #EBDCD0;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  filter: invert(100%) sepia(93%) saturate(416%) hue-rotate(301deg) brightness(96%) contrast(91%);
+}
+
 @media (min-width: 768px) {
   nav a {
     font-size: 25px;
+  }
+
+  p {
+    font-size: 25px;
+  }
+
+  .big-text {
+    font-size: 75px;
+    bottom: -35px;
   }
 }
 
