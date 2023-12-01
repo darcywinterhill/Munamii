@@ -10,31 +10,13 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: 'Urbanist', sans-serif;
   color: #574E51;
 }
 
-h3 {
-  font-family: 'Anton', sans-serif;
-  font-size: 70px;
-  color: white;
-}
-
-h4 {
-  font-family: 'Anton', sans-serif;
-  font-size: 40px;
-  color: white;
-  text-shadow: 4px 3px 1px rgba(0, 0, 0, 1);
-}
-
 p {
-  font-size: 20px;
   font-family: 'Shadows Into Light Two', cursive;
-}
-
-a {
-  font-family: 'Mali', cursive;
-  text-decoration: none;
-  font-family: 'Urbanist', sans-serif;
+  font-size: 20px;
 }
 
 main {
@@ -48,30 +30,25 @@ nav {
   position: absolute;
   overflow: hidden;
   top: 0px;
-  width: 100vw;
-
+  width: 100%;
 }
 
 ul {
   display: table;
   width: 100%;
-
 }
 
 li {
-  display: table-cell;
-
+  display: table-cell
 }
 
 nav a {
-  font-family: 'Urbanist', sans-serif;
-  font-weight: 600;
+  font-weight:600;
   font-size: 20px;
   display: block;
   text-align: center;
   text-decoration: none;
   padding: 15px 0;
-
 }
 
 #image-wrapper {
@@ -79,10 +56,12 @@ nav a {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  width: 100%;
   height: 70vh;
 }
 
 #logo-wrapper {
+  width: 100%;
   height: 30vh;
   display: flex;
   justify-content: center;
@@ -99,94 +78,96 @@ nav a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: space-evenly;
-  height: 100vh;
+  min-height: 40vh;
   background-color: #EBDCD0;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 40 40'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%2383826b' fill-opacity='0.4'%3E%3Cpath d='M0 38.59l2.83-2.83 1.41 1.41L1.41 40H0v-1.41zM0 1.4l2.83 2.83 1.41-1.41L1.41 0H0v1.41zM38.59 40l-2.83-2.83 1.41-1.41L40 38.59V40h-1.41zM40 1.41l-2.83 2.83-1.41-1.41L38.59 0H40v1.41zM20 18.6l2.83-2.83 1.41 1.41L21.41 20l2.83 2.83-1.41 1.41L20 21.41l-2.83 2.83-1.41-1.41L18.59 20l-2.83-2.83 1.41-1.41L20 18.59z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+  border-top: 2px solid white;
+}
+
+#shop-nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+}
+
+#shop-nav a {
+  text-decoration: none;
+}
+
+#big-hello {
+  font-family: 'Anton', sans-serif;
+  font-size: 65px;
+  color: white;
+  display: block;
+  position: relative;
+  bottom: -30px;
 }
 
 .text-wrapper {
-  margin: 0;
-  width: 70%;
   background-color: #EBDCD0;
-  padding: 0 15px 0 15px;
+  max-width: 70%;
   border: 2px solid white;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  padding: 20px 15px;
+  text-align: center;
+}
+button {
+  font-family: 'Mali', cursive;
+  font-size: 18px;
+  color: white;
+  width: 100px;
+  background-color: #574E51;
+  padding: 5px;
+  border: 2px solid white;
+  border-radius: 10px;
+}
+
+#products-window {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 60vh;
+  height: auto;
+  width: 100%;
+  background-color: #ebba77;
+  background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23965734' fill-opacity='0.18' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+  border-top: 6px dotted #965734;
+}
+
+.product-wrapper {
+  background-color: white;
+  margin: 10px;
+  border: 4px solid #965734;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
 }
 
-.text-wrapper h3, p {
-  display: block;
-  position: relative;
-  bottom: 55px;
-}
-
-#shop-nav {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-#cake-link {
-  background-image: url("/images/cakes/cake2.jpg");
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  text-align: center;
-  line-height: 300px;
-  border-radius: 50%;
-}
-
-#cupcake-link {
-  background-image: url("/images/cupcakes/cupcake5.jpg");
-  width: 300px;
-  height: 300px;
-  background-size: cover;
-  text-align: center;
-  line-height: 300px;
-  border-radius: 50%;
-}
-
-#cupcake-link h4, #cake-link h4 {
-  text-shadow: 5px 5px 10px rgba(0, 0, 0, 1);
+#products-window img {
+  width: 200px;
+  height: 200px;
 }
 
 @media (min-width: 768px) {
-
   nav a {
     font-size: 25px;
   }
-
-  #shop-window {
-    justify-content: space-evenly;
-  }
-  #shop-nav {
-    width: 100%;
-    flex-direction: row;
-    justify-content: space-around;
-  }
 }
+
 
 @media (min-width: 1025px) {
 
-  h3 {
-    font-size: 80px;
-  }
-  p {
-    font-size: 28px;
-  }
+main {
+  flex-direction: row;
+}
 
-  main {
-    flex-direction: row;
-  }
+nav {
+  width: 40vw;
+}
 
-  nav {
-    width: 40vw;
-  }
-
-  ul {
-    width: 40vw;
-  }
+ul {
+  width: 40vw;
+}
 
   #image-wrapper {
     width: 40vw;
@@ -201,29 +182,6 @@ nav a {
   #logo-wrapper img {
     max-width: 40%;
     max-height: 40%;
-  }
-
-  #shop-window {
-    flex-direction: row;
-    justify-content: center;
-  }
-
-  .text-wrapper {
-    width: 20%;
-    height: 70vh;
-  }
-
-  .text-wrapper h3 {
-    bottom: 63px;
-  }
-  .text-wrapper p {
-    position: initial;
-  }
-
-  #shop-nav {
-    width: 50%;
-    height: 100%;
-    flex-direction: column;
   }
 
 }

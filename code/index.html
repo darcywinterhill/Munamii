@@ -12,7 +12,7 @@
   <main>
     <nav>
       <ul>
-        <li><a href=#shop-window>Shop</a></li>
+        <li><a href="#shop-window">Shop</a></li>
         <li><a href="#">About</a></li>
         <li><a href="#">Location</a></li>
         <li><a href="#">Contacts</a></li>
@@ -24,31 +24,32 @@
       <img src="/images/logo.png">
     </div>
   </main>
-  <div id="shop-window">
-    
+
+  <section id="shop-window">
+    <h3 id="big-hello">Hello!</h3>
     <div class="text-wrapper">
-      <h3>Hello!</h3>
+
       <p>Welcome to Munamii Cakery!
         We offer you the most delicious cakes and cupcakes for all types of events and celebrations.
         Select what you would like to purchase.</p>
-      </div>
+    </div>
+
+    <div id="shop-nav">
+      <button onclick="loadCakes()">
+        Cakes
+      </button>
+      
+      <button onclick="loadCupcakes()">
+        Cupcakes
+      </button>
+    </div>
+
+
+  </section>
+  <section id="products-window">
+  </section>
   
-        <div id="shop-nav">
-        <a href="cakes.html"><div id="cake-link">
-          <h4>Cakes</h4>
-        </div>
-      </a>
-      <a href="cupcakes.html">
-        <div id="cupcake-link">
-          <h4>Cupcakes</h4>
-        </div>
-      </a>
-      </div>
-
-
-
-  </div>
-
+  <script src="code.js"></script>
 </body>
 
 </html>
