@@ -1,3 +1,5 @@
+
+/* SCROLL TO TOP BUTTON */
 let arrowButton = document.getElementById("arrow-button");
 
 window.onscroll = function() {scrollFunction()};
@@ -11,10 +13,11 @@ function scrollFunction() {
 }
 
 function toTopFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
 
+/* LOAD CAKES OR CUPCAKES IN PRODUCT WINDOW */
 function loadCakes() {
   let result = "";
 

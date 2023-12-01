@@ -9,7 +9,10 @@
 </head>
 
 <body>
+
+  <!-- MAIN/HOME -->
   <main id="main-page">
+
     <nav>
       <ul>
         <li><a href="#shop-window">Shop</a></li>
@@ -17,41 +20,52 @@
         <li><a href="#contacts-window">Contact</a></li>
       </ul>
     </nav>
+
     <div id="image-wrapper">
     </div>
+
     <div id="logo-wrapper">
       <img src="/images/logo.png">
     </div>
+
     <button onclick="toTopFunction()" id="arrow-button" title="scroll to top">
       <img id="up-arrow-img" src="/images/up-arrow.png" />
     </button>
+
   </main>
 
-  <section id="shop-window">
-    <h3 class="big-text">Hello!</h3>
-    <div class="text-wrapper">
+  <!-- SHOP/PRODUCTS -->
+  <section class="products-section">
+    <section id="shop-window">
+      <h3 class="big-text">Hello!</h3>
+      <div class="text-wrapper">
+        <p>Welcome to Munamii Cakery!
+          We offer you the most delicious cakes and cupcakes for all types of events and celebrations.
+          Select what you would like to purchase.
+        </p>
+      </div>
 
-      <p>Welcome to Munamii Cakery!
-        We offer you the most delicious cakes and cupcakes for all types of events and celebrations.
-        Select what you would like to purchase.</p>
-    </div>
+      <div id="shop-nav">
+        <button onclick="loadCakes()">
+          Cakes
+        </button>
 
-    <div id="shop-nav">
-      <button onclick="loadCakes()">
-        Cakes
-      </button>
+        <button onclick="loadCupcakes()">
+          Cupcakes
+        </button>
+      </div>
 
-      <button onclick="loadCupcakes()">
-        Cupcakes
-      </button>
-    </div>
+    </section>
+
+    <section id="products-window">
+      <img id="cake-logo" src="/images/cake_logo.png" />
+    </section>
+
   </section>
 
-  <section id="products-window">
-    <img id="cake-logo" src="/images/cake_logo.png" />
-  </section>
-
+  <!-- ABOUT -->
   <section id="about-window">
+
     <h3 class="big-text">About</h3>
     <div class="text-wrapper">
       <p>
@@ -67,9 +81,12 @@
       <img src="/images/logo.png" />
       <img src="/images/owner-image.png" />
     </div>
+
   </section>
 
+  <!-- CONTACT -->
   <section id="contacts-window">
+
     <h3 class="big-text">Contact</h3>
     <div class="text-wrapper">
       <p><b>Home delivery service:</b> All the city of Malmö and Helsingborg with
@@ -87,6 +104,8 @@
     </div>
 
   </section>
+
+  <!-- FOOTER -->
   <footer>
     <a href="https://www.instagram.com/munamii.cakery/" target="_blank">
       <img src="/images/instagram_logo.png" />
@@ -95,10 +114,10 @@
       <img src="/images/facebook_logo.png" />
     </a>
     <a href="mailto:mockupemail@munamii.com">
-    <img src="/images/email_logo.png" />
-  </a>
+      <img src="/images/email_logo.png" />
+    </a>
   </footer>
+
   <script src="code.js"></script>
 </body>
-
 </html>

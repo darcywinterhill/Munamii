@@ -1,12 +1,6 @@
-/*
-#EBDCD0
-#574E51
-#83826B
-#EBBA77
-#965734
-*/
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Shadows+Into+Light+Two&family=Mali:wght@300&Urbanist:wght@300;600&display=swap');
 
+/* MOBILE VIEW */
 * {
   margin: 0;
   padding: 0;
@@ -49,7 +43,7 @@ li {
 }
 
 nav a {
-  font-weight:600;
+  font-weight: 600;
   font-size: 20px;
   display: block;
   text-align: center;
@@ -69,9 +63,9 @@ nav a {
 }
 
 #up-arrow-img {
-width: 25px;
-height: 25px;
-filter: invert(100%) sepia(45%) saturate(2%) hue-rotate(65deg) brightness(108%) contrast(101%);
+  width: 25px;
+  height: 25px;
+  filter: invert(100%) sepia(45%) saturate(2%) hue-rotate(65deg) brightness(108%) contrast(101%);
 }
 
 #image-wrapper {
@@ -97,6 +91,14 @@ filter: invert(100%) sepia(45%) saturate(2%) hue-rotate(65deg) brightness(108%) 
   max-height: 60%;
   border-radius: 50%;
   border: 2px solid #ebba77;
+}
+
+.products-section {
+  width: 100%;
+  min-height: 100vh;
+  height: auto;
+  display: flex;
+  flex-direction: column;
 }
 
 #shop-window {
@@ -195,7 +197,7 @@ button {
   margin: auto;
 }
 
-#about-window .text-wrapper  p {
+#about-window .text-wrapper p {
   color: white;
 }
 
@@ -238,9 +240,9 @@ footer {
   background-color: #574E51;
   width: 100%;
   height: 10vh;
-  box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
-  -webkit-box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
-  -moz-box-shadow: -1px -10px 22px 0px rgba(0,0,0,0.75);
+  box-shadow: -1px -10px 22px 0px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -1px -10px 22px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -1px -10px 22px 0px rgba(0, 0, 0, 0.75);
   border-top: 1px solid #EBDCD0;
 }
 
@@ -250,7 +252,8 @@ footer img {
   filter: invert(100%) sepia(93%) saturate(416%) hue-rotate(301deg) brightness(96%) contrast(91%);
 }
 
-@media (min-width: 768px) {
+/* TABLET VIEW */
+@media (min-width: 767px) {
   nav a {
     font-size: 25px;
   }
@@ -259,26 +262,62 @@ footer img {
     font-size: 25px;
   }
 
+  b {
+    font-size: 25px;
+  }
+
   .big-text {
     font-size: 75px;
     bottom: -35px;
   }
+
+  #shop-window .text-wrapper {
+    margin-bottom: 35px;
+  }
+
+  button {
+    width: 140px;
+    font-size: 25px;
+  }
+
+  #cake-logo {
+    top: 0;
+  }
+
+  #products-window {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .product-wrapper img {
+    width: 250px;
+    height: 250px;
+  }
+
+  #about-img-wrapper {
+    margin-top: 100px;
+  }
+
+  #about-window img {
+    width: 200px;
+    height: 200px;
+  }
 }
 
-
+/* LAPTOP VIEW */
 @media (min-width: 1025px) {
+  main {
+    flex-direction: row;
+  }
 
-main {
-  flex-direction: row;
-}
+  nav {
+    width: 40vw;
+  }
 
-nav {
-  width: 40vw;
-}
-
-ul {
-  width: 40vw;
-}
+  ul {
+    width: 40vw;
+  }
 
   #image-wrapper {
     width: 40vw;
@@ -295,4 +334,34 @@ ul {
     max-height: 40%;
   }
 
+  .products-section {
+    flex-direction: row;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  #shop-window {
+    min-height: 100vh;
+    width: 40vw;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  #products-window {
+    padding: 0;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 60vw;
+    min-height: 100vh;
+    height: auto;
+  }
+
+  footer {
+    justify-content: flex-start;
+  }
+
+  footer img {
+    margin: 10px;
+  }
 }
