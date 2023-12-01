@@ -19,6 +19,12 @@ p {
   font-size: 20px;
 }
 
+b {
+  font-family: 'Shadows Into Light Two', cursive;
+  font-size: 20px;
+  color: white;
+}
+
 main {
   display: flex;
   flex-direction: column;
@@ -95,7 +101,7 @@ nav a {
   text-decoration: none;
 }
 
-#big-hello {
+.big-text {
   font-family: 'Anton', sans-serif;
   font-size: 65px;
   color: white;
@@ -135,6 +141,14 @@ button {
   border-top: 6px dotted #965734;
 }
 
+#cake-logo {
+  position: relative;
+  top: 150px;
+  width: 200px;
+  height: 200px;
+  filter: invert(41%) sepia(11%) saturate(2939%) hue-rotate(337deg) brightness(85%) contrast(80%);
+}
+
 .product-wrapper {
   background-color: white;
   margin: 10px;
@@ -146,6 +160,54 @@ button {
 #products-window img {
   width: 200px;
   height: 200px;
+}
+
+#about-window {
+  width: 100%;
+  height: 100vh;
+  background-color: #574e51;
+  background-image: url("data:image/svg+xml,%3Csvg width='120' height='120' viewBox='0 0 120 120' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M9 0h2v20H9V0zm25.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm-20 20l1.732 1-10 17.32-1.732-1 10-17.32zM58.16 4.134l1 1.732-17.32 10-1-1.732 17.32-10zm-40 40l1 1.732-17.32 10-1-1.732 17.32-10zM80 9v2H60V9h20zM20 69v2H0v-2h20zm79.32-55l-1 1.732-17.32-10L82 4l17.32 10zm-80 80l-1 1.732-17.32-10L2 84l17.32 10zm96.546-75.84l-1.732 1-10-17.32 1.732-1 10 17.32zm-100 100l-1.732 1-10-17.32 1.732-1 10 17.32zM38.16 24.134l1 1.732-17.32 10-1-1.732 17.32-10zM60 29v2H40v-2h20zm19.32 5l-1 1.732-17.32-10L62 24l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM111 40h-2V20h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zM40 49v2H20v-2h20zm19.32 5l-1 1.732-17.32-10L42 44l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM91 60h-2V40h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM39.32 74l-1 1.732-17.32-10L22 64l17.32 10zm16.546 4.16l-1.732 1-10-17.32 1.732-1 10 17.32zM71 80h-2V60h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM120 89v2h-20v-2h20zm-84.134 9.16l-1.732 1-10-17.32 1.732-1 10 17.32zM51 100h-2V80h2v20zm3.134.84l1.732 1-10 17.32-1.732-1 10-17.32zm24.026 3.294l1 1.732-17.32 10-1-1.732 17.32-10zM100 109v2H80v-2h20zm19.32 5l-1 1.732-17.32-10 1-1.732 17.32 10zM31 120h-2v-20h2v20z' fill='%23ebba77' fill-opacity='0.18' fill-rule='evenodd'/%3E%3C/svg%3E");
+  text-align: center;
+}
+
+#about-window .text-wrapper {
+  background-color: #574E51;
+  margin: auto;
+}
+
+#about-window .text-wrapper  p {
+  color: white;
+}
+
+#about-img-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 25px;
+}
+
+#about-window img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  border: 2px solid #83826B;
+}
+
+#contacts-window {
+  text-align: center;
+  width: 100%;
+  height: 100vh;
+  background-color: #965734;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='36' height='72' viewBox='0 0 36 72'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%23ebba77' fill-opacity='0.18'%3E%3Cpath d='M2 6h12L8 18 2 6zm18 36h12l-6 12-6-12z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+#contacts-window .text-wrapper {
+  margin: auto;
+  background-color: #965734;
+}
+
+#contacts-window .text-wrapper p {
+  color: white;
 }
 
 @media (min-width: 768px) {
