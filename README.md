@@ -1,5 +1,6 @@
 # Munamii
 Mini project during System developer .NET studies @ Lexicon. Written with HTML, CSS and JavaScript.
+- View live @ https://munamii-mockup.netlify.app/
 
 ## Project description
 A mockup website for Munamii Cakery that sells cakes and cupcakes.
