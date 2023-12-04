@@ -42,6 +42,10 @@ li {
   display: table-cell
 }
 
+/* .pointer {
+  cursor: pointer;
+} */
+
 nav a {
   font-weight: 600;
   font-size: 20px;
@@ -60,6 +64,7 @@ nav a {
   bottom: 12vh;
   right: 10px;
   z-index: 99;
+  cursor: pointer;
 }
 
 #up-arrow-img {
@@ -118,8 +123,9 @@ nav a {
   margin: 10px 0;
 }
 
-#shop-nav a {
+#shop-nav button {
   text-decoration: none;
+  cursor: pointer;
 }
 
 .big-text {
@@ -177,12 +183,35 @@ button {
   border: 4px solid #965734;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   text-align: center;
+  cursor: pointer;
 }
 
 .product-wrapper img {
   width: 200px;
   height: 200px;
 }
+
+/* Flash effect on hover */
+@-webkit-keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1; }
+ }
+
+ .flash:hover {
+  opacity: 1;
+  -webkit-animation: flash 1s;
+  animation: flash 1s;
+ }
+
+ @-webkit-keyframes flash {
+  0% {  opacity: .3;  }
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: .3; }
+  100% { opacity: 1;  }
+}
+ 
 
 #about-window {
   width: 100%;
